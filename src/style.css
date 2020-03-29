@@ -1,0 +1,197 @@
+body {
+    background: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  
+  @font-face{
+    font-family: SedanFont;
+    src: url(sedan/Sedan-Regular.ttf);
+  }
+  
+  .menu {
+    width: 22%;
+    height: 100%;
+    display: block;
+    float: left;
+    background: rgb(5, 5, 5,  .4);
+    position: fixed;
+  }
+  body:before{
+    content:"";
+    background-color: rgb(0,0,0);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.4;
+  }
+  body #contenido{
+    position: relative;
+  }
+  .menu #username{
+    font-family: SedanFont;
+    font-size: 28px;
+    font-weight: 100;
+    color: #D8BA74;
+    text-align: center;
+    margin: 3px 20px;
+  }
+  
+  .menu #level{
+    font-family: SedanFont;
+    font-size: 20 px;
+    font-style: regular;
+    font-weight: 20;
+    color: #B49A5D;
+    margin: 10px 30px;
+    text-align: center;
+  }
+  
+  .logo{
+    margin: 36% 34.5% 10%;
+    width: 31%;
+  }
+  #divisorFather{
+    margin: 5px;
+    margin-block-end: 30px;
+    display: block;
+    float: right;
+    width: 75%;
+  }
+  #campeonesIcon{
+    width: 2.5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h2{
+    font-family: SedanFont;
+    color: #D8BA74;
+    line-height: 0.3px;
+    font-size: 2.5em;
+    text-align:center;
+    margin-right: 10px;
+    letter-spacing: 1.5px;
+    font-style: normal;
+    min-height: 1em;
+  }
+  #divisorFather #divisor{
+    width: 68%;
+    margin-top: 0;
+    display: inline-block;
+    position: fixed;
+    margin-left: 3%;
+    
+  }
+  .target {
+    background: url();
+    display: block;
+    box-sizing: border-box;
+    width: 35%;
+    height:40%;
+    margin: 7px;
+    padding-right: 2%;
+    min-width: 33%;
+    min-height:70%;
+    float: left;
+    line-height: 0.3px;
+    padding: 5px;
+    margin-left: 0;
+    margin-right: 0;
+    box-shadow: inset 0px -130px 80px rgba(0, 0, 0, 0.8);
+  }
+  .target:hover{
+    transition: (1.5s) linear;
+    transform: scale(1.05);
+    box-shadow: -10px 0px 10px rgba(6, 120, 187, 0.5),
+    10px -10px 10px rgba(6, 120, 187, 0.5)
+  }
+  #contieneTodo{
+    margin: 0;
+    padding: 0;
+   height: 100%;
+   width: 98%;
+  }
+  
+  
+  .target .info{
+    font-family: Arial;
+    text-align: center;
+    color: white;
+    font-size: 2.3em;
+    letter-spacing: 5px;
+  }
+  .target .info2{
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: center;
+    color: #C4831B;
+  }
+  
+  #champions {
+    margin: 0px;
+    display:flex;
+    overflow-x: scroll;
+    width: 75%;
+    height : 98%;
+    float:right;
+  }
+  #champions::-webkit-scrollbar{
+    width:0.9%;
+    background:rgba(255,255,255,  .1);
+    display: flex;
+    overflow-x: auto;
+  }
+  #champions::-webkit-scrollbar-thumb{
+    background:rgba(255,250,255,  .4) ;
+    border-radius: 5px;
+  }
+  #champions div{
+    width: 100%;
+    height: 35%;
+    margin-top: 90%;
+    padding-top: 0.03px;
+  }
+    
+    #look{
+      background: transparent;
+      border: 0px;
+      border-bottom: 1px solid #EA9D20;
+      box-sizing: border-box;
+      font-family: Arial;
+      font-style: normal;
+      font-weight: 100;
+      font-size: 122%;
+      color: #EA9D20;
+      width: 80%;
+      height: 7%;
+      text-align: left;
+      margin: 3% 9% 6%;
+      outline: none;
+    }
+    .List{
+      background: transparent;
+      border: 0px;
+      border-bottom: 1px solid #EA9D20;
+      box-sizing: border-box;
+      font-family: Arial;
+      font-style: normal;
+      font-weight: 100;
+      font-size: 122%;
+      color: #EA9D20;
+      width: 80%;
+      height: 7%;
+      text-align: left;
+      margin: 3% 9% 6%;
+      
+    }
+    
+    .optionRule{
+      background: rgba(64, 61, 57, 0.9);
+    }
