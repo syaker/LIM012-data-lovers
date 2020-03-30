@@ -67,29 +67,26 @@ body #contenido{
   float: right;
   width: 75%;
 }
-#campeonesIcon{
-  width: 2.5%;
+#championsIcon{
+  width: 2.2%;
+  margin: 1% 1% 0% 49.7%;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 h2{
   font-family: SedanFont;
   color: #D8BA74;
-  line-height: 0.3px;
-  font-size: 2.5em;
-  text-align:center;
-  margin-right: 10px;
-  letter-spacing: 1.5px;
+  font-size: 200%;
+  text-align: center;
+  font-weight: 100;
+  margin: 1% 0% 0.7% 1%;
   font-style: normal;
-  min-height: 1em;
 }
 #divisorFather #divisor{
   width: 68%;
-  margin-top: 0;
+  z-index: initial;
+  margin: 0.1% 0% 2% 3.5%;
   display: inline-block;
   position: fixed;
-  margin-left: 3%;
   
 }
 .target {
@@ -139,11 +136,14 @@ h2{
 
 #champions {
   margin: 0px;
-  display:flex;
+  display: flex;
   overflow-x: scroll;
-  width: 75%;
-  height : 98%;
-  float:right;
+  padding: 3% 1% 1% 1.5%;
+  overflow-y: hidden;
+  width: 58%;
+  height: 98%;
+  margin-right: 8%;
+  float: right;
   }
 #champions::-webkit-scrollbar{
   width:0.9%;
@@ -203,5 +203,7 @@ h2{
     width: 80%;
     height: 7%;
     text-align: left;
-    margin: 3% 6.2% 4%;
+    margin: 3% 9% 2%;
   }
+
+  
