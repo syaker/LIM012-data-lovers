@@ -10,7 +10,7 @@ body {
 
 @font-face{
   font-family: SedanFont;
-  src: url(Sedan/Sedan-Regular.ttf);
+  src: url(/src/Sedan/Sedan-Regular.ttf);
 }
 
 @font-face{
