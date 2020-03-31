@@ -7,13 +7,12 @@ body {
   padding: 0px;
 }
 
-
-@font-face{
+@font-face {
   font-family: SedanFont;
   src: url(Sedan/Sedan-Regular.ttf);
 }
 
-@font-face{
+@font-face {
   font-family: Roboto Normal;
   src: url(roboto/Roboto-Regular.ttf);
 }
@@ -23,81 +22,88 @@ body {
   height: 100%;
   display: block;
   float: left;
-  background: rgb(5, 5, 5,  .4);
+  background: rgb(5, 5, 5, 0.4);
   position: fixed;
 }
-body:before{
-  content:"";
-  background-color: rgb(0,0,0);
+
+body:before {
+  content: "";
+  background-color: rgb(0, 0, 0);
   width: 100%;
   height: 100%;
   position: absolute;
   opacity: 0.4;
 }
-body #contenido{
+
+body #contenido {
   position: relative;
 }
-.menu #username{
+
+.menu #username {
   font-family: SedanFont;
   font-size: 28px;
   font-weight: 100;
-  color: #D8BA74;
+  color: #d8ba74;
   text-align: center;
   margin: 3px 20px;
 }
 
-.menu #level{
+.menu #level {
   font-family: SedanFont;
   font-size: 20 px;
   font-style: regular;
   font-weight: 20;
-  color: #B49A5D;
+  color: #b49a5d;
   margin: 10px 30px;
   text-align: center;
 }
 
-.logo{
+.logo {
   margin: 36% 34.5% 10%;
   width: 31%;
 }
-#divisorFather{
+
+#divisorFather {
   margin: 5px;
   margin-block-end: 30px;
   display: block;
   float: right;
   width: 75%;
 }
-#championsIcon{
+
+#championsIcon {
   width: 2.2%;
   margin: 1% 1% 0% 49.7%;
   display: block;
 }
-h2{
+
+h2 {
   font-family: SedanFont;
-  color: #D8BA74;
+  color: #d8ba74;
   font-size: 200%;
   text-align: center;
   font-weight: 100;
   margin: 1% 0% 0.7% 1%;
   font-style: normal;
 }
-#divisorFather #divisor{
+
+#divisorFather #divisor {
   width: 68%;
   z-index: initial;
   margin: 0.1% 0% 2% 3.5%;
   display: inline-block;
   position: fixed;
-  
 }
+
 .card {
   display: block;
   box-sizing: border-box;
   width: 35%;
-  height:40%;
+  height: 40%;
   margin: 7px;
   padding-right: 2%;
   min-width: 33%;
-  min-height:70%;
+  min-height: 70%;
   float: left;
   line-height: 0.3px;
   padding: 5px;
@@ -105,33 +111,35 @@ h2{
   margin-right: 0;
   box-shadow: inset 0px -130px 80px rgba(0, 0, 0, 0.8);
 }
-.card:hover{
+
+.card:hover {
   transition: (1.5s) linear;
   transform: scale(1.05);
   box-shadow: -10px 0px 10px rgba(6, 120, 187, 0.5),
-  10px -10px 10px rgba(6, 120, 187, 0.5)
+    10px -10px 10px rgba(6, 120, 187, 0.5);
 }
-#contieneTodo{
+
+#contieneTodo {
   margin: 0;
   padding: 0;
- height: 100%;
- width: 98%;
- }
+  height: 100%;
+  width: 98%;
+}
 
-
-.card .info{
+.card .info {
   text-align: center;
   color: white;
   font-size: 2.3em;
   letter-spacing: 5px;
 }
-.card .info2{
+
+.card .info2 {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 1.2em;
   text-align: center;
-  color: #C4831B;
+  color: #c4831b;
 }
 
 #champions {
@@ -144,66 +152,69 @@ h2{
   height: 98%;
   margin-right: 8%;
   float: right;
-  }
-#champions::-webkit-scrollbar{
-  width:0.9%;
-  background:rgba(255,255,255,  .1);
+}
+
+#champions::-webkit-scrollbar {
+  width: 0.9%;
+  background: rgba(255, 255, 255, 0.1);
   display: flex;
   overflow-x: auto;
 }
-#champions::-webkit-scrollbar-thumb{
-  background:rgba(255,250,255,  .4) ;
+
+#champions::-webkit-scrollbar-thumb {
+  background: rgba(255, 250, 255, 0.4);
   border-radius: 5px;
 }
-#champions div{
+
+#champions div {
   width: 100%;
   height: 35%;
   margin-top: 90%;
   padding-top: 0.03px;
 }
-  .orderList{
-    background: rgba(64, 61, 57, 0.9);
-    border: 2px solid #EA9D20;
-    box-sizing: border-box;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 100;
-    font-size: 2em;
-    color: #B49A5D;
-    border-radius: 5px;
-    width: 90%;
-    height: 10%;
-    margin-top: 1em;
-  }
-  #look{
-    background: transparent;
-    border: 0px;
-    border-bottom: 1px solid #EA9D20;
-    box-sizing: border-box;
-    font-family: Arial;
-    font-style: normal;
-    font-weight: 100;
-    font-size: 122%;
-    color: #EA9D20;
-    width: 80%;
-    height: 7%;
-    margin: 3% 6.2% 6%;
 
-  }
-  .List{
-    background: transparent;
-    border: 0px;
-    border-bottom: 1px solid #EA9D20;
-    box-sizing: border-box;
-    font-family: Arial;
-    font-style: normal;
-    font-weight: 100;
-    font-size: 122%;
-    color: #EA9D20;
-    width: 80%;
-    height: 7%;
-    text-align: left;
-    margin: 3% 9% 2%;
-  }
+.orderList {
+  background: rgba(64, 61, 57, 0.9);
+  border: 2px solid #ea9d20;
+  box-sizing: border-box;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 2em;
+  color: #b49a5d;
+  border-radius: 5px;
+  width: 90%;
+  height: 10%;
+  margin-top: 1em;
+}
 
-  
+#look {
+  background: transparent;
+  border: 0px;
+  border-bottom: 1px solid #ea9d20;
+  box-sizing: border-box;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 122%;
+  color: #ea9d20;
+  width: 80%;
+  height: 7%;
+  margin: 3% 6.2% 6%;
+}
+
+.List {
+  background: transparent;
+  border: 0px;
+  border-bottom: 1px solid #ea9d20;
+  box-sizing: border-box;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 122%;
+  color: #ea9d20;
+  width: 80%;
+  height: 7%;
+  text-align: left;
+  margin: 3% 9% 2%;
+}
