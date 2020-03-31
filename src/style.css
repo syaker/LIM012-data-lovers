@@ -89,7 +89,7 @@ h2{
   position: fixed;
   
 }
-.target {
+.card {
   display: block;
   box-sizing: border-box;
   width: 35%;
@@ -105,7 +105,7 @@ h2{
   margin-right: 0;
   box-shadow: inset 0px -130px 80px rgba(0, 0, 0, 0.8);
 }
-.target:hover{
+.card:hover{
   transition: (1.5s) linear;
   transform: scale(1.05);
   box-shadow: -10px 0px 10px rgba(6, 120, 187, 0.5),
@@ -119,13 +119,13 @@ h2{
  }
 
 
-.target .info{
+.card .info{
   text-align: center;
   color: white;
   font-size: 2.3em;
   letter-spacing: 5px;
 }
-.target .info2{
+.card .info2{
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;

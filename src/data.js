@@ -14,8 +14,8 @@ list.addEventListener('change', () => {
       const attack = `<p class='info2'>Nivel de ataque: ${dataChampions[z].info.attack}</p>`;
       const defense = `<p  class='info2' >Nivel de defensa: ${dataChampions[z].info.defense}</p>`;
       saveDates += `
-        <section class='target'style='background:url(${dataChampions[z].splash}); background-size: 100% 100%'>
-        <div id='Datescard'>
+        <section class='card'style='background:url(${dataChampions[z].splash}); background-size: 100% 100%'>
+        <div id='datesCard'>
         ${name + roleId + attack + defense} 
         </div>
         </section>
@@ -30,8 +30,8 @@ list.addEventListener('change', () => {
       const roleId = `<p class ='info2' > ${dataChampions[m].tags}</p > `;
       const attack = `<p class ='info2' > Nivel de ataque: ${dataChampions[m].info.attack}</p > `;
       const defense = `<p  class ='info2' > Nivel de defensa: ${dataChampions[m].info.defense}</p > `;
-      saveDates += `<section class ='target' style = 'background: url(${dataChampions[m].splash}); background-size: 100% 100%' >
-            <div id='Datescard'>
+      saveDates += `<section class ='card' style = 'background: url(${dataChampions[m].splash}); background-size: 100% 100%' >
+            <div id='datesCard'>
               ${name + roleId + attack + defense}
             </div>
     </section >`;
