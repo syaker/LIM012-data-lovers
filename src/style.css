@@ -35,7 +35,7 @@ body:before {
   opacity: 0.4;
 }
 
-body #contenido {
+body #container {
   position: relative;
 }
 
@@ -112,14 +112,13 @@ h2 {
   box-shadow: inset 0px -130px 80px rgba(0, 0, 0, 0.8);
 }
 
-.card:hover {
+.card:hover{
   transition: (1.5s) linear;
   transform: scale(1.05);
-  box-shadow: -10px 0px 10px rgba(6, 120, 187, 0.5),
-    10px -10px 10px rgba(6, 120, 187, 0.5);
+  box-shadow:  0.08rem 0.08rem 0.9rem #feb412;
 }
 
-#contieneTodo {
+#divisor_cards {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -173,7 +172,7 @@ h2 {
   padding-top: 0.03px;
 }
 
-.orderList {
+.orderlist {
   background: rgba(64, 61, 57, 0.9);
   border: 2px solid #ea9d20;
   box-sizing: border-box;
@@ -200,10 +199,10 @@ h2 {
   color: #ea9d20;
   width: 80%;
   height: 7%;
-  margin: 3% 6.2% 6%;
+  margin: 3% 9% 6%;
 }
 
-.List {
+.list {
   background: transparent;
   border: 0px;
   border-bottom: 1px solid #ea9d20;

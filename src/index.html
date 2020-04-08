@@ -5,39 +5,42 @@
     <meta
       name="viewport"
       content="width=device-width"
-      user-scarlable="no,"
+      user-scalable="no,"
       initial-scale="1"
     />
-    <title>repl.it</title>
+    <title>League of Legends</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body>
-    <div id="contenido">
+    <div id="container">
       <aside class="menu">
+       
         <img class="logo" src="LOL_Logo.png" />
         <h1 id="username" class="text">Darken25</h1>
         <h3 id="level" class="text">nivel 30</h3>
 
-        <input type="text" id="look" placeholder="Buscar" />
-        <select class="List" id="orderList">
+        <input type="text" id="look"  placeholder="Buscar" />
+        <select class="list" id="orderList">
           <option id="upward" value="az">A-Z</option>
           <option id="falling" value="za">Z-A</option>
         </select>
-        <select class="List" value="Ver todos los roles">
-          <option class="roleOption">Selecciona una opcion</option>
-          <option class="roleOption" id="Fighter">Fighter</option>
-          <option class="roleOption" id="Tank">Tank</option>
-          <option class="roleOption" id="Assassin">Assassin</option>
-          <option class="roleOption" id="Mage">Mage</option>
-          <option class="roleOption" id="Support">Support</option>
+        <select class="list" id="roleList">
+          <option class="roleOption" selected disabled>Escoger el rol</option>
+          <option class="roleOption" id="Fighter" value="Fighter">Fighter</option>
+          <option class="roleOption" id="Tank" value="Tank">Tank</option>
+          <option class="roleOption" id="Assassin"  value="Assassin">Assassin</option>
+          <option class="roleOption" id="Mage" value="Mage">Mage</option>
+          <option class="roleOption" id="Support" value="Support">Support</option>
+           <option class="roleOption" id="Marksman" value="Marksman">Marksman</option>
         </select>
-        <select class="List">
-          <option class="orderList2" id="puntMax">Ver puntuacion maxima</option>
-          <option class="orderList2" id="puntMin">Ver puntuacion minima</option>
+        <select class="list" id="puntList">
+          <option class="prom" selected disabled>Seleccionar opcion</option>
+          <option class="prom" value="higher" id="puntMax">Mayor armadura por lvl</option>
+          <option class="prom" value="less" id="puntMin">Menor armadura por lvl</option>
         </select>
       </aside>
-      <div id="contieneTodo">
+      <div id="divisor_cards">
         <section id="divisorFather">
           <img
             id="championsIcon"
@@ -50,11 +53,9 @@
           />
         </section>
         <div id="champions"></div>
-        <section id="prueba"></section>
       </div>
     </div>
     <script type="module" src="main.js"></script>
-    <script src="lol.js" nomodule></script>
-    <script type="module" src="data.js"></script>
+    
   </body>
 </html>

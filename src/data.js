@@ -1,41 +1,54 @@
-import champs from './data/lol/lol.js';
-
-const dataChampions = champs.data;
-const arrayObjects = Object.keys(dataChampions);
-const list = document.getElementById('orderList');
-list.addEventListener('change', () => {
-  let saveDates = '';
-  const valor = document.getElementById('orderList').value;
-  if (valor === 'az') {
-    const upward = arrayObjects.sort((a, b) => a.localeCompare(b));
-    upward.forEach((z) => {
-      const name = `<p class='info'>${dataChampions[z].name}</p>`;
-      const roleId = `<p class ='info2'>${dataChampions[z].tags}</p>`;
-      const attack = `<p class='info2'>Nivel de ataque: ${dataChampions[z].info.attack}</p>`;
-      const defense = `<p  class='info2' >Nivel de defensa: ${dataChampions[z].info.defense}</p>`;
-      saveDates += `
-        <section class='card'style='background:url(${dataChampions[z].splash}); background-size: 100% 100%'>
-        <div id='datesCard'>
-        ${name + roleId + attack + defense} 
-        </div>
-        </section>
-        `;
+// order
+export const sortData = (array, sortOrder) => {
+  let outcomeSort;
+  if (sortOrder === 'za') {
+    outcomeSort = array.sort((o1, o2) => {
+      let outcome = 0;
+      if (o1.name > o2.name) {
+        outcome = -1;
+      }
+      if (o1.name < o2.name) {
+        outcome = 1;
+      }
+      return outcome;
     });
-    document.querySelector('#champions').innerHTML = saveDates;
-  } else {
-    const falling = arrayObjects.sort((a, b) => b.localeCompare(a));
-
-    falling.forEach((m) => {
-      const name = `<p class='info' > ${dataChampions[m].name}</p > `;
-      const roleId = `<p class ='info2' > ${dataChampions[m].tags}</p > `;
-      const attack = `<p class ='info2' > Nivel de ataque: ${dataChampions[m].info.attack}</p > `;
-      const defense = `<p  class ='info2' > Nivel de defensa: ${dataChampions[m].info.defense}</p > `;
-      saveDates += `<section class ='card' style = 'background: url(${dataChampions[m].splash}); background-size: 100% 100%' >
-            <div id='datesCard'>
-              ${name + roleId + attack + defense}
-            </div>
-    </section >`;
+  } else if (sortOrder === 'az') {
+    outcomeSort = array.sort((o1, o2) => {
+      let outcome = 0;
+      if (o1.name < o2.name) {
+        outcome = -1;
+      }
+      if (o1.name > o2.name) {
+        outcome = 1;
+      }
+      return outcome;
     });
-    document.querySelector('#champions').innerHTML = saveDates;
+  } return outcomeSort;
+};
+
+// calculate promedio
+export const arrArmorPerLevel = array1 => array1.map(element => element.stats.armorperlevel);
+// entra un array con numeros
+export const average = (array1) => {
+  const sumArmorPerLevel = array1.reduce((previousValue, nowValue) => {
+    const sumArmor = previousValue + nowValue;
+    return sumArmor;
+  });
+  return sumArmorPerLevel / array1.length;
+};
+
+// FUNCTION CALCULAR
+export const computeStats = (arr, num, valor) => {
+  if (valor === 'higher') {
+    const higherPerLevel = arr.filter(element => element.stats.armorperlevel > num);
+    return higherPerLevel;
   }
-});
+  const lessPerLevel = arr.filter(element => element.stats.armorperlevel < num);
+  return lessPerLevel;
+};
+
+// FILTRAR
+export const filterData = (array, valor) => {
+  const arrFiltered = array.filter(eachChampion => eachChampion.tags[0] === valor);
+  return arrFiltered;
+};
