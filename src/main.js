@@ -132,16 +132,3 @@ inputSearch.addEventListener('input', () => {
     listChampReverse(cardReverse);
   }
 });
-/*
-// HAMBURGUER MENU
-const menu = document.querySelector('.hamburger');
-
-// method
-function toggleMenu(event) {
-  this.classList.toggle('is-active');
-  document.querySelector('.menupal').classList.toggle('is_active');
-  event.preventDefault();
-}
-// event
-menu.addEventListener('click', toggleMenu, false);
-// rotateY(180deg) */
