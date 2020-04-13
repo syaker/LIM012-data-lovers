@@ -48,6 +48,8 @@ En este proyecto implementamos 9 historias de usuario:
 
 ### _Feedback recibido_ 💪
 
+Compañera Carmen: Los prototipos de baja tienen que contener cada historia de usuario en su totalidad, paso por paso que se va a implementar en cada historia.
+
 ## _Prototipos de alta_ 📪
 
 #### WEB 💻
@@ -62,7 +64,13 @@ En este proyecto implementamos 9 historias de usuario:
 
 ### _Testing con usuarios reales_ 👩 🧑
 
+Usuario 1: Sugirio que las tarjetas se eleven cuando pase el cursor
+Usuario 2: Sugirio que al dar click la tarjeta se voltee para mostrar otra informacion
+
 ### _Feedback recibido_ 💪
+
+Guadalupe: Los bordes de las tarjetas deben ser mas suavizados.
+Usuario 1: Deberian añadirle un botón que redirija a la página de League of Legends.
 
 ## Proyecto finalizado 📦
 
