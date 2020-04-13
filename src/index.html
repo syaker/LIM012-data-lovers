@@ -1,56 +1,87 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width"
+      user-scalable="no,"
+      initial-scale="1"
+    />
+    <title>League of Legends</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="icon"
+      href="https://lolstatic-a.akamaihd.net/frontpage/apps/prod/harbinger-l10-website/es-mx/production/es-mx/static/favicon-0cf29ce019f7cd1e7b24f85ab6ff97da.ico"
+    />
+  </head>
 
-<head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width" user-scalable="no," initial-scale="1" />
-	<title>League of Legends</title>
-	<link href="style.css" rel="stylesheet" type="text/css" />
-  <link rel="icon" href="https://lolstatic-a.akamaihd.net/frontpage/apps/prod/harbinger-l10-website/es-mx/production/es-mx/static/favicon-0cf29ce019f7cd1e7b24f85ab6ff97da.ico">
-</head>
-
-<body>
-	<section class="login">
-		<!-- <img src="Images/background-login.jpg" class="background"/> -->
-		<img src="Images/character-male.png" class="male1" />
-    <img src="Images/character-male2.png" class="male2" />
-    <div class="contentlogin">
-      <img src="Images/logoriot.png" class="logoriot" />
-      <p class="text initsession">Iniciar sesión</p>
-      <div class="inputdiv">
-        <input type="text" maxlength="15" class="input user" id="inputUser" placeholder="Nombre&nbsp;de&nbsp;usuario">
-      </div>
-      <div class="pass">
-        <input type="password" maxlength="15" class="input password" placeholder="Contraseña">
-      </div>
-      <button class="enterlogin">Ingresar</button>
+  <body>
+    <section class="login">
+      <!-- <img src="Images/background-login.jpg" class="background"/> -->
+      <img src="Images/character-male.png" class="male1" />
+      <img src="Images/character-male2.png" class="male2" />
+      <div class="contentlogin">
+        <img src="Images/logoriot.png" class="logoriot" />
+        <p class="text initsession">Iniciar sesión</p>
+        <div class="inputdiv">
+          <input
+            type="text"
+            maxlength="15"
+            class="input user"
+            id="inputUser"
+            placeholder="Nombre&nbsp;de&nbsp;usuario"
+          />
         </div>
-  </section>
+        <div class="pass">
+          <input
+            type="password"
+            maxlength="15"
+            class="input password"
+            placeholder="Contraseña"
+          />
+        </div>
+        <button class="enterlogin">Ingresar</button>
+      </div>
+    </section>
     <div id="container">
       <aside class="menu">
-       
         <img class="logo" src="Images/LOL_Logo.png" />
         <h1 id="username"></h1>
         <h3 id="level" class="text">nivel 30</h3>
-        <input type="text" id="look"  placeholder="Buscar" />
-        <select class="list" id="orderList">
-          <option id="upward" value="az">A-Z</option>
-          <option id="falling" value="za">Z-A</option>
-        </select>
-        <select class="list" id="roleList">
-          <option class="roleOption" selected disabled>Escoger el rol</option>
-          <option class="roleOption" id="Fighter" value="Fighter">Fighter </option>
-          <option class="roleOption" id="Tank" value="Tank">Tank</option>
-          <option class="roleOption" id="Assassin"  value="Assassin">Assassin</option>
-          <option class="roleOption" id="Mage" value="Mage">Mage</option>
-          <option class="roleOption" id="Support" value="Support">Support</option>
-           <option class="roleOption" id="Marksman" value="Marksman">Marksman</option>
-        </select>
-        <select class="list" id="puntList">
-          <option class="prom" selected disabled>Seleccionar opcion</option>
-          <option class="prom" value="higher" id="puntMax">Mayor armadura por lvl</option>
-          <option class="prom" value="less" id="puntMin">Menor armadura por lvl</option>
-        </select>
+        <section id="lists">
+          <input type="text" id="look" placeholder="Buscar" />
+          <select class="list" id="orderList">
+            <option id="upward" value="az">A-Z</option>
+            <option id="falling" value="za">Z-A</option>
+          </select>
+          <select class="list" id="roleList">
+            <option class="roleOption" selected disabled>Escoger el rol</option>
+            <option class="roleOption" id="Fighter" value="Fighter"
+              >Fighter
+            </option>
+            <option class="roleOption" id="Tank" value="Tank">Tank</option>
+            <option class="roleOption" id="Assassin" value="Assassin"
+              >Assassin</option
+            >
+            <option class="roleOption" id="Mage" value="Mage">Mage</option>
+            <option class="roleOption" id="Support" value="Support"
+              >Support</option
+            >
+            <option class="roleOption" id="Marksman" value="Marksman"
+              >Marksman</option
+            >
+          </select>
+          <select class="list" id="puntList">
+            <option class="prom" selected disabled>Seleccionar opcion</option>
+            <option class="prom" value="higher" id="puntMax"
+              >Mayor armadura por lvl</option
+            >
+            <option class="prom" value="less" id="puntMin"
+              >Menor armadura por lvl</option
+            >
+          </select>
+        </section>
       </aside>
       <div id="divisor_cards">
         <section id="divisorFather">
@@ -68,6 +99,5 @@
       </div>
     </div>
     <script type="module" src="main.js"></script>
-    
   </body>
 </html>
