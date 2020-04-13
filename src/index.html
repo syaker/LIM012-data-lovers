@@ -1,25 +1,36 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width"
-      user-scalable="no,"
-      initial-scale="1"
-    />
-    <title>League of Legends</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
 
-  <body>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" user-scalable="no," initial-scale="1" />
+	<title>League of Legends</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="https://lolstatic-a.akamaihd.net/frontpage/apps/prod/harbinger-l10-website/es-mx/production/es-mx/static/favicon-0cf29ce019f7cd1e7b24f85ab6ff97da.ico">
+</head>
+
+<body>
+	<section class="login">
+		<!-- <img src="Images/background-login.jpg" class="background"/> -->
+		<img src="Images/character-male.png" class="male1" />
+    <img src="Images/character-male2.png" class="male2" />
+    <div class="contentlogin">
+      <img src="Images/logoriot.png" class="logoriot" />
+      <p class="text initsession">Iniciar sesión</p>
+      <div class="inputdiv">
+        <input type="text" maxlength="15" class="input user" id="inputUser" placeholder="Nombre&nbsp;de&nbsp;usuario"></input>
+      </div>
+      <div class="pass">
+        <input type="password" maxlength="15" class="input password" placeholder="Contraseña"></input>
+      </div>
+      <button class="enterlogin">Ingresar</button>
+        </div>
+  </section>
     <div id="container">
       <aside class="menu">
        
-        <img class="logo" src="LOL_Logo.png" />
-        <h1 id="username" class="text">Darken25</h1>
+        <img class="logo" src="Images/LOL_Logo.png" />
         <h3 id="level" class="text">nivel 30</h3>
-
         <input type="text" id="look"  placeholder="Buscar" />
         <select class="list" id="orderList">
           <option id="upward" value="az">A-Z</option>
@@ -27,7 +38,7 @@
         </select>
         <select class="list" id="roleList">
           <option class="roleOption" selected disabled>Escoger el rol</option>
-          <option class="roleOption" id="Fighter" value="Fighter">Fighter</option>
+          <option class="roleOption" id="Fighter" value="Fighter">Fighter </option>
           <option class="roleOption" id="Tank" value="Tank">Tank</option>
           <option class="roleOption" id="Assassin"  value="Assassin">Assassin</option>
           <option class="roleOption" id="Mage" value="Mage">Mage</option>

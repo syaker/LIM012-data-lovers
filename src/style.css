@@ -1,5 +1,5 @@
 body {
-  background: url("background.jpg");
+  background: url("Images/background.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-attachment: fixed;
@@ -9,12 +9,17 @@ body {
 
 @font-face {
   font-family: SedanFont;
-  src: url(Sedan/Sedan-Regular.ttf);
+  src: url(Fuentes/Sedan-Regular.ttf);
 }
 
 @font-face {
-  font-family: Roboto Normal;
-  src: url(roboto/Roboto-Regular.ttf);
+  font-family: leagueoflegend;
+  src: url(Fuentes/LolBold.ttf);
+}
+
+@font-face {
+  font-family: fmark;
+  src: url(Fuentes/ffmark/FontFont.FF.Mark.Pro.Medium.Commercial.Font-FONT/FontFont_FF.Mark.Pro.Medium.otf);
 }
 
 .menu {
@@ -73,18 +78,18 @@ body #container {
 
 #championsIcon {
   width: 2.2%;
-  margin: 1% 1% 0% 49.7%;
+  margin: 2.3% 1% 0% 49.7%;
   display: block;
 }
 
 h2 {
-  font-family: SedanFont;
+  font-family: leagueoflegend;
   color: #d8ba74;
   font-size: 200%;
   text-align: center;
-  font-weight: 100;
+  letter-spacing: 2.5px;
   margin: 1% 0% 0.7% 1%;
-  font-style: normal;
+  min-width: 50%;
 }
 
 #divisorFather #divisor {
@@ -98,24 +103,66 @@ h2 {
 .card {
   display: block;
   box-sizing: border-box;
-  width: 35%;
-  height: 40%;
-  margin: 7px;
+  min-width: 250px;
+  min-height: 300px;
   padding-right: 2%;
-  min-width: 33%;
-  min-height: 70%;
+  margin: 0px;
   float: left;
-  line-height: 0.3px;
   padding: 5px;
-  margin-left: 0;
-  margin-right: 0;
   box-shadow: inset 0px -130px 80px rgba(0, 0, 0, 0.8);
+  transform-style: preserve-3d;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
-
-.card:hover{
-  transition: (1.5s) linear;
-  transform: scale(1.05);
-  box-shadow:  0.08rem 0.08rem 0.9rem #feb412;
+.imagenItem {
+  width: 3%;
+  height: 3%;
+  float: left;
+  margin-left: 10%;
+}
+.imagenItem img {
+  margin-top: 1.5px;
+}
+.textItem {
+  float: right;
+  text-align: justify;
+  align-items: left;
+  color: white;
+  margin-right: 5%;
+  line-height: 88%;
+  font-family: leagueoflegend;
+}
+.Datescard,
+.DatescardBack {
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+}
+.Datescard {
+  padding-top: 0.03px;
+  margin-top: 90%;
+  display: block;
+}
+.DatescardBack {
+  transform: rotateY(180deg);
+  position: absolute;
+  box-shadow: inset 0px -200px 80px rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+}
+.infoMain {
+  font-family: leagueoflegend;
+  font-size: 125%;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+}
+.card:hover {
+  transition: (1s) ease;
+  transform: scale(1.1);
+  box-shadow: 0.08rem 0.1rem 0.9rem #feb412;
+  z-index: 3;
 }
 
 #divisor_cards {
@@ -128,29 +175,34 @@ h2 {
 .card .info {
   text-align: center;
   color: white;
-  font-size: 2.3em;
-  letter-spacing: 5px;
+  font-size: 140%;
+  font-family: fmark;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
 .card .info2 {
-  font-family: Roboto;
+  font-family: fmark;
   font-style: normal;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 87%;
   text-align: center;
   color: #c4831b;
 }
 
 #champions {
-  margin: 0px;
+  margin-top: 0.5%;
   display: flex;
   overflow-x: scroll;
   padding: 3% 1% 1% 1.5%;
   overflow-y: hidden;
-  width: 58%;
-  height: 98%;
-  margin-right: 8%;
+  width: 65%;
+  height: 110%;
+  margin-right: 4%;
   float: right;
+  line-height: 0.3px;
+  cursor: pointer;
+  align-items: center;
 }
 
 #champions::-webkit-scrollbar {
@@ -165,14 +217,7 @@ h2 {
   border-radius: 5px;
 }
 
-#champions div {
-  width: 100%;
-  height: 35%;
-  margin-top: 90%;
-  padding-top: 0.03px;
-}
-
-.orderlist {
+.list {
   background: rgba(64, 61, 57, 0.9);
   border: 2px solid #ea9d20;
   box-sizing: border-box;
@@ -216,4 +261,183 @@ h2 {
   height: 7%;
   text-align: left;
   margin: 3% 9% 2%;
+}
+#mistakeText {
+  color: #ea9d20;
+  font-size: 3em;
+  font-family: fmark;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  margin: auto;
+}
+
+.login {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 2;
+  background-color: #f1f1f1;
+}
+
+.image.namelol {
+  width: 30%;
+  height: 47%;
+  margin: 0px;
+}
+button {
+  font-family: fmark, Arial;
+  font-weight: bold;
+  font-size: 74%;
+  padding: 4% 6%;
+  background-color: #2b9da6;
+  color: #fbfffe;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin: auto;
+  display: block;
+  border: 1.5px solid white;
+  border-radius: 3px;
+  outline: none;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+button:hover {
+  background-color: transparent;
+  color: #222725;
+  border: #2b9ea6 solid 1.5px;
+  border-radius: 2px;
+  outline: none;
+}
+
+.contentlogin {
+  width: 26%;
+  height: 66%;
+  margin: 6% 37% 17% 37%;
+  /* background-color: black; */
+  padding: 1.5% 0.5%;
+  text-align: center;
+  border-radius: 3px;
+  background-color: white;
+}
+
+.input {
+  border: 3px solid white;
+  background-color: #e5e5e5;
+  border-radius: 7px;
+  width: 69%;
+  height: 4%;
+  padding: 4.3% 6%;
+  font-size: 68%;
+  text-transform: uppercase;
+  font-family: fmark, Arial;
+  color: #848c8e;
+}
+
+.pass {
+  padding: 0% 0% 9% 0%;
+}
+
+input:focus {
+  border: 3px solid black;
+  background-color: #e5e5e5;
+  border-radius: 5px;
+  width: 68%;
+  height: 4%;
+  padding: 4.3% 6%;
+  font-size: 69%;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: fmark, Arial;
+  color: #2b302e;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.text.initsession {
+  font-family: fmark, Arial;
+  font-size: 160%;
+  font-weight: bold;
+  padding: 4%;
+  margin: 3% 3% 13% 3%;
+}
+
+.input:focus {
+  text-transform: uppercase;
+}
+
+.background {
+  z-index: -1;
+}
+.background:before {
+  opacity: 4;
+}
+
+.male1 {
+  position: absolute;
+  z-index: -1;
+  width: 65%;
+  height: 115%;
+  animation-name: rebotemale1;
+  animation-duration: 2.7s;
+  animation-iteration-count: infinite;
+}
+
+.male2 {
+  position: absolute;
+  width: 39%;
+  height: 98%;
+  z-index: -1;
+  right: 0px;
+  bottom: -80px;
+}
+
+.inputdiv {
+  padding: 0% 0% 4% 0%;
+}
+
+.logoriot {
+  z-index: 2;
+  margin: auto;
+  padding: 4% 0% 0%;
+  display: block;
+  width: 14%;
+  height: 12%;
+}
+
+.logout {
+  display: none;
+}
+
+.male2:hover {
+  filter: brightness(60%);
+}
+
+@keyframes rebotemale1 {
+  0% {
+    bottom: -144px;
+  }
+  50% {
+    bottom: -155px;
+  }
+  100% {
+    bottom: -144px;
+  }
+}
+
+.play {
+  margin-top: 90%;
+  margin-left: 40%;
+  position: absolute;
+  background-color: #ea9d20;
+}
+
+.play:hover {
+  background-color: #ea9d20;
+  transition: (1s) ease;
+  transform: scale(1.1);
+  box-shadow: 0.08rem 0.1rem 0.9rem #feb412;
+  color: white;
+  border: 1.5px solid white;
 }

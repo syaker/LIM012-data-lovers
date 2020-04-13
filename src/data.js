@@ -3,27 +3,18 @@ export const sortData = (array, sortOrder) => {
   let outcomeSort;
   if (sortOrder === 'za') {
     outcomeSort = array.sort((o1, o2) => {
-      let outcome = 0;
-      if (o1.name > o2.name) {
-        outcome = -1;
-      }
-      if (o1.name < o2.name) {
-        outcome = 1;
-      }
-      return outcome;
+      if (o1.name > o2.name) { return -1; }
+      if (o1.name < o2.name) { return 1; }
+      return 0;
     });
   } else if (sortOrder === 'az') {
     outcomeSort = array.sort((o1, o2) => {
-      let outcome = 0;
-      if (o1.name < o2.name) {
-        outcome = -1;
-      }
-      if (o1.name > o2.name) {
-        outcome = 1;
-      }
-      return outcome;
+      if (o1.name < o2.name) { return -1; }
+      if (o1.name > o2.name) { return 1; }
+      return 0;
     });
-  } return outcomeSort;
+  }
+  return outcomeSort;
 };
 
 // calculate promedio
@@ -51,4 +42,27 @@ export const computeStats = (arr, num, valor) => {
 export const filterData = (array, valor) => {
   const arrFiltered = array.filter(eachChampion => eachChampion.tags[0] === valor);
   return arrFiltered;
+};
+
+export const search = (array, initial) => {
+  const champCompare = initial.toLowerCase();
+  const filtro = array.filter((element) => {
+    const nombreBuscado = element.name.toLowerCase();
+    if (nombreBuscado.indexOf(champCompare) !== -1) { return element; }
+    return false;
+  });
+  return filtro;
+};
+
+
+export const search2 = (array, initial) => {
+  const outcome = [];
+
+  array.filter((element) => {
+    const nombreBuscado = element.name.toLowerCase();
+    if (nombreBuscado.indexOf(initial) > -1) { return outcome.push(element); }
+    return outcome;
+  });
+
+  return outcome;
 };
