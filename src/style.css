@@ -446,10 +446,11 @@ input:focus {
   border: 1.5px solid white;
 }
 
-@media (min-height: 640px) {
+@media (min-height: 640px) and (min-width: 350px) {
   .login {
     width: 100%;
     height: 100%;
+    position: fixed;
   }
   .male1 {
     width: 127%;
@@ -468,6 +469,10 @@ input:focus {
     text-align: center;
     border-radius: 7px;
     background-color: white;
+  }
+
+  .card .info2 {
+    margin: 12% 0%;
   }
 
   .text.initsession {
@@ -495,6 +500,8 @@ input:focus {
     width: 100%;
     height: 10%;
     top: 0%;
+    z-index: 0;
+    background: rgb(5, 5, 5, 0.8);
   }
 
   .menu #username {
@@ -509,6 +516,7 @@ input:focus {
     width: 100%;
     height: 100%;
     position: fixed;
+    z-index: -1;
   }
 
   .menu #level {
@@ -518,22 +526,17 @@ input:focus {
     top: 5%;
   }
 
-  #divisorFather {
-    margin: 5px;
-    top: 11%;
-    position: fixed;
-    margin-block-end: 30px;
-    display: block;
-    width: 98%;
-  }
-
   h2 {
     margin: 2% 0% -0.1% 1%;
+    font-size: 182%;
+    padding: 0% 1% 5%;
   }
 
   #divisorFather #divisor {
     margin: 0.1% 2%;
     width: 93%;
+    height: 2%;
+    background: #191919;
   }
 
   #championsIcon {
@@ -553,23 +556,66 @@ input:focus {
     overflow-y: unset;
     width: 95%;
     margin: 115% 12%;
+    z-index: -1;
   }
 
   .card {
     width: 45%;
     margin: 2%;
     float: left;
-    min-width: 40%;
+    min-width: 46%;
     min-height: 60%;
     padding: 0%;
+    background-position: -184px 100%;
   }
 
   #lists {
     text-align: center;
     margin: 19.5% auto;
     width: 82%;
+    z-index: 0;
+    background-color: #191919;
+    padding: 4% 9% 7%;
   }
   .list {
     margin: 9px;
+  }
+
+  .infoMain {
+    font-family: leagueoflegend;
+    font-size: 90%;
+    text-align: center;
+    margin: 12% 8%;
+  }
+
+  #divisorFather {
+    background-color: #191919;
+    margin: 0px;
+    top: 9%;
+    position: fixed;
+    display: block;
+    width: 100%;
+  }
+
+  p {
+    font-size: 87%;
+    margin: 5% 0% 5%;
+  }
+
+  .imagenItem img {
+    width: 374%;
+    height: 286%;
+  }
+
+  .textItem {
+    width: 70%;
+  }
+
+  .play {
+    margin: 0%;
+    top: 84%;
+    left: 39%;
+    font-size: 66%;
+    padding: 3% 6%;
   }
 }
